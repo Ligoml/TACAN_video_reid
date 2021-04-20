@@ -17,7 +17,7 @@ This is the code repository for our tech paper "Temporal Aggregation with Clip-l
 ```
   
 ### Introduction
-Originl Codes are forked from: [video-person-reid](https://github.com/jiyanggao/Video-Person-ReID) and [deep-person-reid](https://github.com/KaiyangZhou/deep-person-reid)
+Originl Codes are forked from: [video-person-reid](https://github.com/jiyanggao/Video-Person-ReID) and [deep-person-reid](https://github.com/KaiyangZhou/deep-person-reid), thanks for their sharing.
 
 Based on that, we implement: <br>
 (1) Original temporal modeling methods including temporal pooling, temporal attention, RNN and 3D conv. Some other video-based reid method: Quality Aware, Intra-clip Aggregation, Clip-level Weight and MGN-based model are implemented.<br>
@@ -76,3 +76,5 @@ An HTTP link will be shown on terminal and you could see different charts on web
   ISSN={2642-9381},
   month={March},}
 ```
+项目介绍
+代码派生于[video-person-reid](https://github.com/jiyanggao/Video-Person-ReID) 和 [deep-person-reid](https://github.com/KaiyangZhou/deep-person-reid)，感谢作者的开源分享。
