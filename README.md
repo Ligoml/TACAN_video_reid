@@ -1,6 +1,7 @@
 # TACAN_video_reid
 
-This is the code repository for our tech paper "Temporal Aggregation with Clip-level Attention for Video-based Person Re-identification": https://ieeexplore.ieee.org/document/9093413 poster video:https://www.youtube.com/watch?v=PhWGC67pTsA. If you find this help your research, please cit
+This is the code repository for our tech paper "Temporal Aggregation with Clip-level Attention for Video-based Person Re-identification": https://ieeexplore.ieee.org/document/9093413, 
+poster video:https://www.youtube.com/watch?v=PhWGC67pTsA. If you find this helpful for your research, please cit
 ```
 @INPROCEEDINGS{9093413,
   author={M. {Li} and H. {Xu} and J. {Wang} and W. {Li} and Y. {Sun}},
@@ -61,6 +62,7 @@ An `./result/` folder will be generated when training. To visualize training pro
     tensorboard --logdir=./result
 An HTTP link will be shown on terminal and you could see different charts on webpage browser using this link.
 
+### 中文版
 这是我们的技术论文“片段级别时间注意聚合的视频行人再识别算法”的代码库，论文地址：https://ieeexplore.ieee.org/document/9093413，海报视频：https://www.youtube.com/watch?v=PhWGC67pTsA。 如果您发现这对您的研究有所帮助，请引用
 ```
 @INPROCEEDINGS{9093413,
@@ -76,5 +78,12 @@ An HTTP link will be shown on terminal and you could see different charts on web
   ISSN={2642-9381},
   month={March},}
 ```
-项目介绍
+### 项目介绍
 代码派生于[video-person-reid](https://github.com/jiyanggao/Video-Person-ReID) 和 [deep-person-reid](https://github.com/KaiyangZhou/deep-person-reid)，感谢作者的开源分享。
+基于开源代码，我们的代码包含：<br>
+（1）片段间的时序平均聚合、时序注意聚合、RNN聚合、3D卷积，片段间的注意聚合、MGN等；<br>
+（2）基础训练框架和基础损失函数与[deep-person-reid](https://github.com/KaiyangZhou/deep-person-reid)大体相同；<br>
+（3）增加了论文中提到的Min-max loss模块；<br>
+（4）其他调整策略：学习率预热和数据增强（在同一剪辑中同步化）；<br>
+（5）使用Tensorboard可视化训练过程；<br>
+（6）完成兼容性工作。 代码现在可以兼容PyTorch 1.0.1，Torchvision 0.2.2和Python 3.6。<br>
